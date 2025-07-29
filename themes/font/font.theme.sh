@@ -41,14 +41,9 @@ function _omb_theme_PROMPT_COMMAND() {
     # This needs to be first to save last command return code
     local RC="$?"
 
-<<<<<<< HEAD
     local hostname="${_omb_prompt_bold_gray}\u@\h"
     local python_venv; _omb_prompt_get_python_venv
     python_venv=$_omb_prompt_white$python_venv
-=======
-    hostname="${bold_black}\u@\h"
-    virtualenv="${white}$(condaenv_prompt) "
->>>>>>> bfc8d53 (update)
 
     # Set return status color
     if [[ ${RC} == 0 ]]; then
